@@ -1,0 +1,144 @@
+* {
+	margin:  0px;
+	padding:  0px;
+	box-sizing: border-box;
+}
+
+body{
+	font: 18px 'Lato';
+}
+
+
+.header{
+	min-width:  516px;
+	width: 100%;
+	height: 100vh;
+	min-height: 638px;
+	background: url("../gfx/header.jpg") center/cover no-repeat;
+	position: relative;
+	background-attachment: fixed;	
+	color:  white;
+	text-align:  center;
+	text-shadow:  0 0 15px rgba(0, 0, 0, .3);
+}
+
+.header .logo{
+	margin: auto;
+	margin-top: 10%;
+	width:  20%;
+	min-width:  270px;
+	height: 40vh;
+	min-height:  270px;
+}
+
+.header h1{
+	margin: 0px  auto;
+	font-size:  65px;
+	letter-spacing:  8px;
+}
+
+.header p{
+	font-size:  30px;
+	color:  white;
+}
+
+.header #test a{
+	color:  white;
+}
+
+.header .nav ul{
+	
+	display:  flex;
+	justify-content: flex-end;
+	list-style:  none;
+	text-align:  center;
+	
+}
+
+.header .nav a{
+	font-size:  28px;
+	display:  block;
+	padding:  20px;
+	padding-right:  60px;
+	color:  white;
+	text-decoration:  none;
+	font-weight:  bold;
+}
+
+.header .nav{
+	width:  100%;
+	background-color:  rgba(0,0,0,0.4);
+}
+
+.pomocniczy{
+	min-width:  516px;
+	position:  fixed;
+	width:  100%;
+}
+
+.small_menu{
+	position: fixed;
+	top: 0px;
+	left: 1%;
+	width: 17%;
+	height: auto;
+	visibility: hidden;
+	
+}
+
+@media screen and (max-width: 516px){
+	.pomocniczy{
+		visibility: hidden;
+	}
+
+	.small_menu{
+		visibility: visible;
+	}
+}
+
+.header li .podkreslenie{
+    height: 2px;
+    background-color: white;
+    width: 0px;
+    transition: 0.3s;
+}
+.header a:hover > .podkreslenie{
+    width: 100%;
+}
+
+ .przewin{
+	margin-top:  80px;
+	animation: skakanie 5s;
+	animation-iteration-count: infinite; 
+}
+
+@keyframes skakanie{ 
+from {margin-top: 80px;}
+10% {margin-top: 80px;}
+30% {margin-top: 20px;}
+50% {margin-top: 80px;}
+70% {margin-top: 50px;}
+90% {margin-top: 80px;}
+to  {margin-top: 80px;}
+}
+
+section{
+	text-align:  center;
+	min-width:  516px;
+	min-height: 90vh;
+	background-color:  #e6dacf ;
+}
+
+#o-nas .kucharz{
+	background-size: cover;
+	margin-right: 5%;
+	width:  40%;
+	min-width:  270px;
+	height: 80vh;
+	min-height:  270px;
+}
+
+.dwa{
+	background-color:  #bba480;
+}
+
